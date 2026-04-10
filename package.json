@@ -1,0 +1,13 @@
+{
+  "name": "ebac-exerc-22",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "test": "npm run cypress:run"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}

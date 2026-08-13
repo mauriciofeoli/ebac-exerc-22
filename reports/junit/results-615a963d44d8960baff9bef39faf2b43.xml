@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.774" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-08-13T12:39:54" tests="0" file="cypress\e2e\account-registration.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cadastro de conta" timestamp="2026-08-13T12:39:54" tests="1" time="7.768" failures="0">
+    <testcase name="Cadastro de conta deve criar conta com email e senha válidos" time="7.743" classname="deve criar conta com email e senha válidos">
+    </testcase>
+  </testsuite>
+</testsuites>

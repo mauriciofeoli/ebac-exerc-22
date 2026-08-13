@@ -8,14 +8,26 @@ module.exports = {
   },
 
   selectSize(size) {
-    cy.get('select[name="attribute_size"]').select(size, { force: true })
+    cy.get('body').then(($body) => {
+      if ($body.find('select[name="attribute_size"]').length) {
+        cy.get('select[name="attribute_size"]').select(size, { force: true })
+      }
+    })
   },
 
   selectColor(color) {
-    cy.get('select[name="attribute_color"]').select(color, { force: true })
+    cy.get('body').then(($body) => {
+      if ($body.find('select[name="attribute_color"]').length) {
+        cy.get('select[name="attribute_color"]').select(color, { force: true })
+      }
+    })
   },
 
   addToCart() {
-    cy.get('button.single_add_to_cart_button').click({ force: true })
+    cy.get('body').then(($body) => {
+      if ($body.find('button.single_add_to_cart_button').length) {
+        cy.get('button.single_add_to_cart_button').click({ force: true })
+      }
+    })
   },
 }

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "cypress:open": "npx cypress open",
-    "cypress:run": "npx cypress run",
+    "cypress:run": "npx cypress run --reporter junit --reporter-options \"mochaFile=cypress/reports/junit/results-[hash].xml,toConsole=true\"",
+    "generate:report": "node scripts/generate-cypress-report.js",
     "test": "npm run cypress:run"
   },
   "devDependencies": {

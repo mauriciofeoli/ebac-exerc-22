@@ -1,9 +1,39 @@
+﻿# Testes Mobile iOS - EBAC
 
-## URL da Loja
-[http://lojaebac.ebaconline.art.br/](http://lojaebac.ebaconline.art.br/)
+Projeto de automação de testes para cenários de login, navegação, carrinho e pagamento em um aplicativo iOS.
 
-### (Page Objects)
-- Criar uma conta com email e senha válidos
+## Objetivo
 
-### (AppActions)
-- Adicionar produto ao carrinho e navegar para o checkout
+Validar a experiência do usuário em cenários críticos de compra e fluxo de autenticação em ambiente mobile.
+
+## Tecnologias
+
+- WebdriverIO
+- Appium
+- Sauce Labs
+- JavaScript
+
+## Pré-requisitos
+
+- Node.js
+- npm
+- Appium
+- Conta Sauce Labs configurada
+
+## Instalação
+
+```bash
+npm install
+```
+
+## Execução
+
+```bash
+npm test
+```
+
+## Estrutura do projeto
+
+- `.sauce/` — configuração do ambiente de execução;
+- `test/` — cenários automatizados;
+- `wdio.config.js` — configuração do WebdriverIO.
